@@ -30,8 +30,6 @@ const createRootReducer = history =>
 export const history = createBrowserHistory();
 
 export default function configureStore(preloadedState) {
-  console.log(preloadedState);
-
   const store = createStore(
     createRootReducer(history),
     preloadedState,
